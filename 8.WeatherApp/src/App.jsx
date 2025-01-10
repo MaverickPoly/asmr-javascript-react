@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_KEY = "ed2828e59ddf36874f1950c82bf3f254";
+const API_KEY = "API KEY";
 const BASE_URL = "http://api.openweathermap.org/data/2.5/weather?";
 
 function App() {
