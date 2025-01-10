@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_KEY = "6f3fe4f";
+const API_KEY = "API HERE";
 const BASE_URL = "http://www.omdbapi.com/";
 
 function App() {
