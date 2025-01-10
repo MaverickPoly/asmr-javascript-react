@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background: #eee;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: #fff;
+}
+
+.error-box {
+  color: red;
+}
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+}

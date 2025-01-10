@@ -1,0 +1,82 @@
+body {
+    display: -ms-flexbox;
+    text-align: center;
+    align-items: center;
+}
+
+
+.summary {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto auto 40px;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.total>div {
+    width: 200px;
+}
+
+.root {
+    width: fit-content;
+    background-color: white;
+    display: flex;
+    margin: auto;
+    padding: 1% 2% 2%;
+    justify-content: center;
+    text-align: center;
+    border: 6px gray;
+    box-sizing: content-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-height: 30vh;
+}
+.vertical {
+    color: rgb(35, 35, 105);
+    margin: 0 2%;
+    border-width: 2px;
+}
+#table {
+    border-collapse: collapse;
+    width: 50vw;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+#table th, #table td {
+    text-align: left;
+    padding: 12px;
+}
+#table tr {
+    border-bottom: 1px solid #ddd;
+}
+#table tr.titles {
+    background-color: deepskyblue;
+}
+
+.hr {
+    margin: 30px;
+}
+#new {
+    width: 20vw;
+}
+
+input, select, option {
+    padding: 2%;
+    border-radius: 5px;
+    margin: 1%;
+}
+.zoom {
+    color: black;
+    transition: transform .3s;
+}
+.zoom:hover {
+    transform: scale(1.1);
+    color: dodgerblue;
+}

@@ -1,0 +1,21 @@
+body {
+  background: #260030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: transparent;
+  background: radial-gradient(at center, white, rgb(29, 29, 29));
+  background-clip: text;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  transition: filter 300ms;
+}
+
+h1:hover {
+  filter: drop-shadow(0 8px 20px rgba(27, 228, 255, 0.8));
+}

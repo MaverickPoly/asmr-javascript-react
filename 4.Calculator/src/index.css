@@ -1,0 +1,68 @@
+body {
+  background: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 18px rgba(255, 255, 255, 0.3);
+  width: 340px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.field {
+  width: 94%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.btn {
+  padding: 14px;
+  font-size: 22px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.btn.delete {
+  background: rgb(255, 63, 63);
+}
+.btn.delete:hover {
+  background: rgb(177, 44, 44);
+}
+.btn.operation {
+  background: orange;
+}
+.btn.operation:hover {
+  background: rgb(198, 128, 0);
+}
+.btn.number {
+  background: rgb(108, 108, 108);
+}
+.btn.number:hover {
+  background: rgb(82, 82, 82);
+}
+.btn.eval {
+  background: green;
+}
+.btn.eval:hover {
+  background: rgb(0, 86, 0);
+}

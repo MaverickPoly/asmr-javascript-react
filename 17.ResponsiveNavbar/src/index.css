@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+  background: #eee;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  z-index: 50;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.navbar .logo-container {
+  font-size: 26px;
+  text-decoration: none;
+  font-weight: bold;
+  a {
+    color: indigo;
+  }
+}
+
+.navbar .links {
+  display: flex;
+  list-style: none;
+  gap: 14px;
+
+  a {
+    color: #333;
+    font-size: 20px;
+    transition: color 0.2s;
+  }
+  a:hover {
+    color: #111;
+    text-decoration: underline;
+  }
+}
+.btn {
+  padding: 7px 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 255, 0.8);
+  background: rgba(153, 173, 255, 0.4);
+  cursor: pointer;
+  color: #333;
+}
+.btn:hover {
+  background: rgb(72, 108, 255);
+  color: white;
+}
+
+.menu-btn,
+.close-btn {
+  border: 1px solid gray;
+  font-size: 26px;
+  width: 38px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  display: none;
+}
+.close-btn {
+  display: block;
+  background: rgba(87, 87, 87, 0.8);
+  color: rgb(187, 187, 187);
+  font-size: 22px;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: 24px;
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu .close-box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+.mobile-menu .mobile-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 6px;
+  align-items: center;
+
+  li {
+    background: #33333364;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  a {
+    color: #ddd;
+    font-size: 24px;
+  }
+  li:hover {
+    background: #44444464;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: flex;
+  }
+  .navbar .links,
+  .btn-outline {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu.active {
+    transform: translateX(-100%);
+  }
+}

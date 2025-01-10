@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background: #ccc;
+}
+
+.todo-list {
+  background: #eee;
+  margin: 20px;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 900px;
+  min-width: 300px;
+}
+
+.add-todo {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 24px;
+  width: 100%;
+
+  input {
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 7px;
+    flex: 1;
+  }
+  input:focus {
+    outline: 2px solid gray;
+  }
+
+  button {
+    padding: 10px 20px;
+    background: rgb(163, 0, 163);
+    color: white;
+    border-radius: 8px;
+  }
+  button:hover {
+    background: rgb(130, 0, 130);
+  }
+}
+
+.todos-container {
+  width: 100%;
+
+  .todo-tile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 6px;
+
+    .btn {
+      padding: 6px;
+      font-size: 18px;
+      color: white;
+      border-radius: 10px;
+    }
+    .btn.success {
+      background: rgb(72, 255, 72);
+    }
+    .btn.error {
+      background: rgb(255, 91, 91);
+    }
+  }
+  .title {
+    font-size: 22px;
+    margin-left: 18px;
+  }
+  .title.success {
+    color: green;
+    text-decoration: line-through;
+  }
+  .title.error {
+    color: red;
+    text-decoration: none;
+  }
+}
